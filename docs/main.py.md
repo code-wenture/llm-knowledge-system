@@ -7,26 +7,22 @@
 # main.py
 
 ### Overview
-This file defines and executes the primary entry point function for the `llm-knowledge-system`. It currently performs a basic output operation.
+This file serves as the primary entry point for the `llm-knowledge-system`. When executed, it initializes a basic greeting, signaling the application's startup.
 
 ### Architecture & Role
-This file serves as the top-level execution control and the application's starting point. It functions as the root module when the application is run directly.
+This file operates at the application layer, functioning as the top-level script that kicks off the system's execution. It is intended to contain the high-level orchestrating logic, though currently it is a minimal implementation.
 
 ### Key Components
-- `main()`: The principal function executed when the script runs, responsible for the core logic, which currently involves printing a greeting message.
+- `main()`: The core function executed when the script runs, responsible for printing the system's greeting.
 
 ### Execution Flow / Behavior
-When `main.py` is executed as the main script, the `if __name__ == "__main__":` block triggers the invocation of the `main()` function. The `main()` function then prints the string "Hello from llm-knowledge-system!" to the standard output.
+Upon direct execution of `main.py`, the `if __name__ == "__main__":` block is triggered. This invokes the `main()` function, which then prints the string "Hello from llm-knowledge-system!" to the console.
 
 ### Dependencies
 None significant.
 
 ### Design Notes
-This file currently represents a minimal viable script, often used as a template or placeholder. Its simplicity indicates a foundational stage in application development, awaiting further expansion of core logic within the `main` function.
+This file currently represents a bare-bones scaffold. It is a placeholder for future, more complex application startup logic, initialization routines, or command-line interface (CLI) parsing. Its simplicity suggests it's either an early stage of development or a minimal viable entry point for a larger system.
 
 ### Diagram
-```mermaid
-graph TD
-A[ScriptExecution] --> B[CallMainFunction]
-B[CallMainFunction] --> C[PrintGreeting]
-```
+Non-significant.
